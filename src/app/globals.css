@@ -5,7 +5,36 @@
 
 body {
   background-color: rgb(120, 116, 116);
-  color: red;
+}
+
+/* Texts Styles */
+.text-1 {
+  font-size: 27px;
+}
+
+.text-2 {
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+.text-3 {
+  font-size: 40px;
+  margin: 5px 0;
+}
+
+.text-3 .typed-text {
+  color: #292b27;
+  font-weight: 500;
+}
+
+.socials-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Space between icons */
+  padding: 20px; /* Increased padding around the container */
+  margin: 20px auto; /* Add margin for further separation from other page elements */
+  max-width: 960px; /* Optional: Control maximum width of the container */
 }
 
 @layer utilities {

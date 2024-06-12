@@ -1,26 +1,24 @@
 
 import Link from 'next/link';
+import styles from '@/app/styles/Navbar.module.css';
 
-const Navbar: React.FC = () => {
+const Navbar = () => {
     return (
-        <nav>
-            <ul style={{ display: 'flex', listStyle: 'none', justifyContent: 'space-around' }}>
-                <li>
-                    <Link href="/" passHref>
-                        <button type="button" aria-label="Home page">Home</button>
-                    </Link>
-                </li>
-                <li>
-                    <Link href="/projects" passHref>
-                        <button type="button" aria-label="Projects page">Projects</button>
-                    </Link>
-                </li>
-                <li>
-                    <Link href="/education" passHref>
-                        <button type="button" aria-label="Education page">Education</button>
-                    </Link>
-                </li>
-            </ul>
+        <nav className={styles.navbar}>
+            <div className={styles.navLogo}>
+                Mokhalad Aljuboori
+            </div>
+            <div className={styles.navLinks}>
+                <Link href="/">
+                    <button>About</button>
+                </Link>
+                <Link href="/courses">
+                    <button>Courses</button>
+                </Link>
+                <Link href="/education">
+                    <button>Education</button>
+                </Link>
+            </div>
         </nav>
     );
 };
